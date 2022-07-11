@@ -1,0 +1,129 @@
+:root{
+    background-color:rgb(201, 127, 127);
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1,h2,h3,h4{
+    margin-bottom: 1rem;
+}
+
+h1{
+    font-size: 5.4rem;
+    color:darkred;
+    margin-bottom: 5rem;
+}
+
+h1 > span{
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 4.2rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+/*Utilities*/
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+  /* Buttons */
+
+.btn{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid rgb(139, 0, 0);
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color:rgb(139, 0, 0);
+    background-color: bisque;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(139, 0, 0,0.5);
+    transform: translateY(-o.1rem);
+    transition: transform 150ms;   
+}
+
+.btn[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.btn:active{
+    transform: scale(0.98);
+    box-shadow: 0 0.2rem 1.0rem 0 rgb(139, 0, 0,0.5);
+    border: 0.2rem solid rgb(139, 0, 0);
+    background-color: rgb(253, 217, 173);
+}
+
+/* Forms */
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    box-shadow: 0 0.1rem 1.3rem 0  rgb(139, 0, 0, 0.8);
+    border: none;
+}
+
+input::placeholder{
+    color:rgb(232, 214, 194);
+}

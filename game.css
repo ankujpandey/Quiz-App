@@ -1,0 +1,127 @@
+.choice-container{
+    display: flex;
+    margin-bottom: 0.7rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.01rem solid rgb(81, 0, 0, 0.25);
+    background-color: antiquewhite;
+}
+
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(139, 0, 0,0.5);
+    transform: translateY(-o.1rem);
+    transition: transform 150ms;
+}
+
+.choice-prefix{
+    padding: 1.5rem 2.5rem;
+    background-color:brown;
+    color: white;
+}
+
+.choice-text{
+    padding: 1.5rem; 
+    width:100%;
+}
+
+.correct{
+    background-color: rgb(110, 221, 110);
+    box-shadow: rgb(0, 216, 0, 0.6);
+    border-width: 0.4rem;
+}
+
+.incorrect{
+    background-color: rgb(255, 70, 70);
+    box-shadow: rgb(255, 0, 0, 0.6);
+    border-width: 0.4rem;
+
+}
+
+/*HUD*/
+
+#hud{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text{
+    text-align: center;
+    font-size: 4rem;
+}
+
+
+
+#progressBarFull{
+    height: 3.4rem;
+    background-color: rgb(201, 127, 127);
+
+}
+
+#progressBar{
+    width: 20rem;
+    height: 4rem;
+    border: 0.4rem solid brown;
+    border-inline-color: rgb(141, 12, 12);
+    margin-top: 1.5rem;
+
+}
+
+#progressBarFull{
+    height: 3.4rem;
+    background-color: brown;
+    width: 100%;
+}
+
+/* Loader */
+#loader {
+    position: relative;
+    width: 120px;
+    height: 140px;
+    background-image: radial-gradient(circle 30px, antiquewhite 100%, transparent 0),
+    radial-gradient(circle 5px, antiquewhite 100%, transparent 0),
+    radial-gradient(circle 5px, antiquewhite 100%, transparent 0),
+    linear-gradient(antiquewhite 20px, transparent 0);
+    background-position: center 127px , 94px 102px , 16px 18px, center 114px;
+    background-size: 60px 60px, 10px 10px , 10px 10px , 4px 14px;
+    background-repeat: no-repeat;
+    z-index: 10;
+    perspective: 500px;
+  }
+
+#loader::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    border: 3px solid antiquewhite;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -55%) rotate(-45deg);
+    border-right-color: transparent;
+    box-sizing: border-box;
+}
+#loader::after {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    transform: translate(-50%, -55%) rotate(-45deg) rotateY(0deg) ;
+    left: 50%;
+    top: 50%;
+    box-sizing: border-box;
+    border: 7px solid rgb(141, 12, 12);
+    border-radius:50%;
+    animation: rotate 0.5s linear infinite;
+}
+
+@keyframes rotate {
+  to{transform: translate(-50%, -55%) rotate(-45deg) rotateY(360deg)   }
+}
+    
