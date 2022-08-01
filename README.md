@@ -8,3 +8,7 @@ It's a quiz app where you can play quiz, watch your score and you can save your 
 ![Screenshot 2022-08-01 230313](https://user-images.githubusercontent.com/82190152/182208868-c5ac2f31-dd5e-440f-b1e8-6babf1606e5c.png)
 
 ![Screenshot 2022-08-01 230335](https://user-images.githubusercontent.com/82190152/182208858-158cf80d-139f-4d42-b79c-c1e27d40c540.png)
+
+<hr>
+
+<h4 align="center"> Thank You !! For Visiting.</h4>
