@@ -12,3 +12,4 @@ It's a quiz app where you can play quiz, watch your score and you can save your 
 <hr>
 
 <h4 align="center"> Thank You !! For Visiting.</h4>
+
